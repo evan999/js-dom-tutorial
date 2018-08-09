@@ -11,3 +11,16 @@ Array.from(titles).forEach(function(item){
 
 //Note: 'titles' initially is NOT an array. It is an html collection
 
+// Lesson 5
+
+// grab all elements with a class of name
+var books = document.querySelectorAll('#book-list li .name');
+
+Array.from(books).forEach(function(book){
+    //console.log(book.textContent); //grabs text in element
+    book.textContent += ' (book title)';
+});
+
+const bookList = document.querySelector('#book-list');
+//bookList.innerHTML = '<h2>Books and more books...</h2>';
+bookList.innerHTML += '<p>This is how you add HTML</p>';
