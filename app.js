@@ -21,9 +21,9 @@ Array.from(books).forEach(function(book){
     book.textContent += ' (book title)';
 });
 
-const bookList = document.querySelector('#book-list');
-//bookList.innerHTML = '<h2>Books and more books...</h2>';
-bookList.innerHTML += '<p>This is how you add HTML</p>';
+// const bookList = document.querySelector('#book-list');
+// bookList.innerHTML = '<h2>Books and more books...</h2>';
+// bookList.innerHTML += '<p>This is how you add HTML</p>';
 
 
 // Lesson 6: Nodes
@@ -40,4 +40,22 @@ console.log('#page-banner node type is:', banner.hasChildNodes());
 
 const clonedBanner = banner.cloneNode(true);
 console.log(clonedBanner);
+
+// Lesson 7: Traversing the DOM Part 1
+
+const bookList = document.querySelector('#book-list');
+console.log('the parent node is:', bookList.parentNode);
+console.log('the parent node is:', bookList.parentElement.parentElement);
+
+console.log(bookList.childNodes);
+
+console.log(bookList.children);
+
+
+
+
+
+
+
+
 
