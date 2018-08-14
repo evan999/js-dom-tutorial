@@ -104,6 +104,39 @@ list.addEventListener('click', function(e){
     }
 })
 
+// Lesson 11: Interacting with Forms
+
+// document.forms[0];
+// document.forms['add-book'];
+
+// Add books
+
+const addForm = document.forms['add-book'];
+
+addForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const value = addForm.querySelector('input[type="text"]').value;
+    console.log(value);
+});
+
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
