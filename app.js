@@ -139,8 +139,6 @@ addForm.addEventListener('submit', function(e){
     li.appendChild(deleteBtn);
     list.appendChild(li);
     
-    
-    
 });
 
 //Lesson 13: Styles & Classes
@@ -159,6 +157,19 @@ li.className += "test3";
 li.className += " test4";
 
 */
+
+// Lesson 14: Attributes
+
+book.getAttribute('class'); // "name"
+book.setAttribute('class', 'name-2'); // sets attribute of element
+
+book.hasAttribute('class'); // true
+book.hasAttribute('href'); // false
+
+book.removeAttribute('class'); // removes selected attribute
+
+book.setAttribute('class', 'name');
+
 
 
 
