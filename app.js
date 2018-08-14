@@ -141,6 +141,21 @@ addForm.addEventListener('submit', function(e){
     
 });
 
+
+// Lesson 15: Checkboxes & Change Elements
+
+// Hide books
+const hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change', function(e){
+   if(hideBox.checked){
+       list.style.display = "none"; // hide ul
+   } 
+   else{
+       list.style.display = "initial"; // or "block"
+   }
+});
+
+
 //Lesson 13: Styles & Classes
 
 /*
@@ -169,6 +184,11 @@ book.hasAttribute('href'); // false
 book.removeAttribute('class'); // removes selected attribute
 
 book.setAttribute('class', 'name');
+
+
+
+
+
 
 
 
