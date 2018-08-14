@@ -129,14 +129,36 @@ addForm.addEventListener('submit', function(e){
     deleteBtn.textContent = 'delete';
     bookName.textContent = value;
     
+    // Add classes
+    bookName.classList.add('name');
+    deleteBtn.classList.add('delete');
+    
     // Append to DOM
     
     li.appendChild(bookName);
     li.appendChild(deleteBtn);
     list.appendChild(li);
     
+    
+    
 });
 
+//Lesson 13: Styles & Classes
+
+/*
+
+var li = document.querySelector('li:last-child');
+li.style.color = 'red';
+li.style.marginTop = "60px";
+
+li.className = "test";
+li.className = "test2";
+
+li.className += "test3";
+
+li.className += " test4";
+
+*/
 
 
 
