@@ -155,6 +155,8 @@ hideBox.addEventListener('change', function(e){
    }
 });
 
+// Lesson 16: Creating a Search Filter
+
 // filter books
 
 const searchBar = document.forms['search-books'].querySelector('input');
@@ -170,6 +172,25 @@ searchBar.addEventListener('keyup', function(e){
             book.style.display = 'none';
         }
     })
+})
+
+// Lesson 17: Tabbed Content
+
+// tabbed Content
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.panel');
+tabs.addEventListener('click', function(e){
+    if(e.target.tagName = "LI"){
+        const targetPanel = document.querySelector(e.target.dataset.target);
+        panels.forEach(function(panel){
+            if(panel == targetPanel){
+                panel.classList.add('active');
+            }
+            else{
+                panel.classList.remove('active');
+            }
+        })
+    }
 })
 
 
